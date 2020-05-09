@@ -7,4 +7,4 @@ urlpatterns = [
     path('dashboard/',DashboardView.as_view())
 ]
 
-dbStore(repeat=1000,repeat_until=None)
+dbStore(repeat=100,repeat_until=None)

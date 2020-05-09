@@ -13,7 +13,7 @@ q.append('AIzaSyBgpbpPFfpJaHMPHxzELJwUiR2CEL5UABk')
 @background()
 def dbStore():
     global latest_time
-    print('running')
+    print('---Running---')
     searchUrl = 'https://www.googleapis.com/youtube/v3/search'
     flag=True
     while 1:
@@ -30,7 +30,7 @@ def dbStore():
         results = requests.get(searchUrl,params=params)
         # If key fails, push the key to the back of the queue
         if results.status_code==403:
-            print('----')
+            print('----Key failed----')
             q.append(q.pop(0))
             continue
         results = results.json()

@@ -7,7 +7,7 @@ Hi, i have created an api to fetch latest videos from youtube in reverse chronol
 
 ### Features implemented
 - Get api to fetch videos
-- Background task to call youtube apis after every 1 min
+- Background task to call youtube apis after every 100 sec
 - Implemented queue to use multiple api keys if one fails (Implemented roundrobin method)
 - Created a dashboard with sorting option based on published date
 
