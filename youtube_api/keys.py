@@ -1,5 +1,0 @@
-keys=[
-"AIzaSyC3KbXEXt7Ft5aTfiPCtTrT64oSvXKsEyc",
-"AIzaSyBgpbpPFfpJaHMPHxzELJwUiR2CEL5UABk",
-"AIzaSyAwUMUQuz1zg6qMCsNKbDndC3zNQAHYdSo"
-]

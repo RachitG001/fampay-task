@@ -1,6 +1,6 @@
 from django.urls import path
 from .views import CricketDataView,DashboardView
-from .tasks import db_store
+from .tasks import api_fetch
 
 urlpatterns = [
     path('get-data/',CricketDataView.as_view()),
@@ -9,4 +9,4 @@ urlpatterns = [
 
 
 # Comment below line before making migrations.
-db_store(repeat=100,repeat_until=None)
+api_fetch(repeat=100,repeat_until=None)
