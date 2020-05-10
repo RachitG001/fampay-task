@@ -3,6 +3,7 @@ chardet==3.0.4
 Django==2.1.7
 django-background-tasks==1.2.5
 django-compat==1.0.15
+django-filter==2.2.0
 djangorestframework==3.11.0
 idna==2.9
 psycopg2==2.8.5

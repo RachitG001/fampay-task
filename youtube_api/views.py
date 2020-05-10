@@ -1,8 +1,7 @@
 from .serializers import CricketSerializer
 from .models import Cricket
 from rest_framework.pagination import PageNumberPagination
-from rest_framework import generics
-from rest_framework import filters
+from rest_framework import generics,filters
 # Create your views here.
 
 # Custom pagination class
@@ -23,5 +22,5 @@ class DashboardView(generics.ListAPIView):
     queryset = Cricket.objects.all().order_by()
     serializer_class = CricketSerializer
     filter_backends = [filters.OrderingFilter]
-    ordering_fields = ['publishedAt']
+    ordering_fields = ['publishedAt','title']
     order_by = ['-publishedAt']
